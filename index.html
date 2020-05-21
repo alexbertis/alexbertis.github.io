@@ -1,8 +1,50 @@
 <html>
 <head>
   <title>Alejandro Bertinelli</title>
+  <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+
+body{
+    background:rgb(89, 165, 19);
+	  font-family: 'Montserrat', sans-serif;
+}
+
+span{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    font-size:110px;
+    text-transform: uppercase;
+	  letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    transition: all 350ms ease;
+    text-shadow: 8px 8px #ff1f1f, 20px 20px #000000;
+    animation-name: guau;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/*span:hover {
+    text-shadow: 4px 4px #ff1f8f, 8px 8px #000000;
+    animation: none;
+}*/
+
+@keyframes guau {
+    0% {
+        text-shadow: 8px 8px #ff1f1f, 20px 20px #000000;
+    }
+    50% {
+        text-shadow: 4px 4px #ff1f1f, 8px 8px #000000;
+    }
+    100% {
+        text-shadow: 8px 8px #ff1f1f, 20px 20px #000000;
+    }
+}
+</style>
 </head>
 <body>
-  <p>Soy Alejandro Bertinelli</p>
+  <span>Soy Alejandro Bertinelli</span>
 </body>
 </html>
